@@ -1,14 +1,14 @@
-import {useEffect, useState} from 'react';
+import {FC, useEffect, useState} from 'react';
 
 import { addNewTodo, fetchTodos } from './store/todoSlice';
 import NewTodoForm from './components/NewTodoForm';
 import TodoList from './components/TodoList';
 
-import './App.css';
+import './App.css'
 import { useDispatch, useSelector } from 'react-redux';
 
 
-function App() {
+function Ap () {
   const [title, setTitle] = useState('');
   const {status, error} = useSelector(state => state.todos);
 
